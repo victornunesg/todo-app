@@ -20,7 +20,7 @@ The users should be able to:
 - Toggle light and dark mode
 - Drag and drop to reorder items on the list
 
-**Thanks for checking out this front-end coding!
+**Thanks for checking out this front-end coding!""
 
 
 
