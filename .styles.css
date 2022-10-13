@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+/*setting css variables according to theme dark*/
+.theme-dark {
+    --bg-top-image: 0 0 url(./images/bg-desktop-dark.jpg) no-repeat;
+    --main-bg: hsl(235, 21%, 11%);
+    --todo-bg: hsl(235, 24%, 19%);
+    --todo-shadow: hsl(235, 21%, 11%);
+    --font-color: hsl(234, 39%, 85%);
+    --font-color-hover: #fff;
+}
+
+/*setting css variables according to theme light*/
+.theme-light {
+    --bg-top-image: 0 0 url(./images/bg-desktop-light.jpg) no-repeat;
+    --main-bg: hsl(0, 0%, 98%);
+    --todo-bg: hsl(0, 0%, 98%);
+    --todo-shadow: hsl(235, 19%, 35%);
+    --font-color: hsl(236, 9%, 61%);
+    --font-color-hover: hsl(235, 21%, 11%);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+header,
+.add-new-item,
+.content.li,
+.bottom-items,
+.filter {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background: red;
+}

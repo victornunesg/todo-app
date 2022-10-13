@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/.styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap">
 
   <title>Frontend Mentor | Todo app</title>
 </head>
@@ -27,6 +28,7 @@
     </div>
 
     <section class="content">
+
       <ul>
         <li>
           <label for="" class="list-item">
@@ -50,6 +52,7 @@
           </label>
         </li>
       </ul>
+
     </section>
 
     <div class="bottom-items">
@@ -60,8 +63,21 @@
       </div>
 
       <div class="filter">
-        <label></label>
+        <label>
+          <input type="radio" name="filter" id="all" checked>
+          <span>All</span>
+        </label>
+        <label>
+          <input type="radio" name="filter" id="active">
+          <span>Active</span>
+        </label>
+        <label>
+          <input type="radio" name="filter" id="completed">
+          <span>Completed</span>
+        </label>
       </div>
+
+      <span class="clear">Clear Completed</span>
 
     </div>
     
@@ -70,4 +86,5 @@
   <script src="./script.js"></script>
 
 </body>
+
 </html>
