@@ -5,19 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/.styles.css">
 
   <title>Frontend Mentor | Todo app</title>
-
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+
+<body class="theme-dark">
+
   <header>
-    <img src="./images/bg-desktop-light.jpg">
     <h1>TODO</h1>
+    <div class="theme-block">
+      <input type="checkbox" name="theme" id="theme">
+    </div>
   </header>
+
+  <main>
+
+    <div class="add-new-item">
+      <span></span>
+      <input type="text" placeholder="Create a new todo..." name="addItem" id="addItem">
+    </div>
+
+    <section class="content">
+      <ul>
+        <li>
+          <label for="" class="list-item">
+            <input type="checkbox" name="todoItem" checked>
+            <span class="checkmark"></span>
+            <span class="text">Text 1</span>
+          </label>
+        </li>
+        <li>
+          <label for="" class="list-item">
+            <input type="checkbox" name="todoItem">
+            <span class="checkmark"></span>
+            <span class="text">Text 2</span>
+          </label>
+        </li>
+        <li>
+          <label for="" class="list-item">
+            <input type="checkbox" name="todoItem">
+            <span class="checkmark"></span>
+            <span class="text">Text 3</span>
+          </label>
+        </li>
+      </ul>
+    </section>
+
+    <div class="bottom-items">
+      
+      <div class="items-left">
+        <span>2</span>
+        items left
+      </div>
+
+      <div class="filter">
+        <label></label>
+      </div>
+
+    </div>
+    
+  </main>
+
+  <script src="./script.js"></script>
+
 </body>
 </html>
