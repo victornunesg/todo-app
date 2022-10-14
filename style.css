@@ -43,10 +43,43 @@ header,
     align-items: center;
 }
 
-
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    background: red;
+    background: var(--bg-top-image);
+    background-size: contain;
+    background-color: var(--main-bg);
+    color: var(--font-color);
+}
+
+header {
+    justify-content: space-between;
+    padding: 52px 0 11px;
+}
+
+header, main {
+    max-width: 545px;
+    margin: 0 auto;
+}
+
+h1 {
+    letter-spacing: 8px;
+}
+
+.theme-block {
+    margin: -10px 0 0;
+}
+
+
+.theme-block #theme {
+    display: none;
+}
+
+.theme-block {
+    background: url(./images/icon-sun.svg);
+    display: block;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
 }
